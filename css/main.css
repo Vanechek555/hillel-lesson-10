@@ -1,0 +1,231 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto+Serif:regular,500,600,700,800,900&display=swap");
+/*------------------Roboto----------------*/
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf"), url("../fonts/Roboto-Regular.woff"), url("../fonts/Roboto-Regular.woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.ttf"), url("../fonts/Roboto-Bold.woff"), url("../fonts/Roboto-Bold.woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Black.ttf"), url("../fonts/Roboto-Black.woff"), url("../fonts/Roboto-Black.woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+/*-----------------Helvetica--------------*/
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/HelveticaNeueCyr-Roman.ttf"), url("../fonts/HelveticaNeueCyr-Roman.woff"), url("../fonts/HelveticaNeueCyr-Roman.woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/HelveticaNeueCyr-Bold.ttf"), url("../fonts/HelveticaNeueCyr-Bold.woff"), url("../fonts/HelveticaNeueCyr-Bold.woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/HelveticaNeueCyr-Black.ttf"), url("../fonts/HelveticaNeueCyr-Black.woff"), url("../fonts/HelveticaNeueCyr-Black.woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+/*ОБНУЛЕНИЕ СТИЛЕЙ*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  min-height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*-----------------Button------------------*/
+.button {
+  padding: 5px 10px;
+  font-size: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: all 0.3s ease 0s;
+}
+
+/*----------------button-red-----------------*/
+.button-red {
+  padding: 8px 13px;
+  font-size: 12px;
+  background-color: #bd081d;
+}
+.button-red:hover {
+  background-color: #8B0000;
+  color: rgb(213, 211, 211);
+}
+
+/*---------------button-outline--------------*/
+.button-outline {
+  font-size: 10px;
+  font-weight: 800;
+  color: rgb(34, 48, 66);
+  border: 1px solid #bd081d;
+  border-radius: 10px;
+  letter-spacing: 0.25px;
+}
+.button-outline:hover {
+  color: rgba(51, 72, 100, 0.5);
+  border: 1px solid #ff0926;
+}
+
+/*---------------button-input---------------*/
+.button-input {
+  min-height: 35px;
+  font-size: 10px;
+  font-weight: 600;
+  background-color: #bd081d;
+  letter-spacing: 1.25px;
+  border: 1px solid #E6E6E6;
+  border-radius: 0px 5px 5px 0px;
+}
+.button-input:hover {
+  background-color: #8B0000;
+  color: rgb(213, 211, 211);
+}
+
+/*-------------------Header-block-------------------*/
+.header-block__label {
+  position: relative;
+  padding-left: 30px;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 200%;
+  letter-spacing: 2.5px;
+  color: #4B4B4B;
+}
+.header-block__label:not(:last-child) {
+  margin-bottom: 30px;
+}
+.header-block__label::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 19px;
+  height: 19px;
+  background: url("../img/index/about-us/overline-mark.svg") 0 0 no-repeat;
+}
+.header-block__label:hover::before {
+  transform: scale(2);
+}
+.header-block__title {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 116%;
+  color: #02133C;
+}
+
+/*----------------Body---------------*/
+body {
+  font-family: "Helvetica", sans-serif;
+  overflow-x: hidden;
+}
+
+/*---------------Wrapper-------------*/
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/*----------------Main---------------*/
+.main {
+  flex-grow: 1;
+}
+
+/*--------------Container------------*/
+[class*=__container] {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.about-us__container {
+  max-width: 876px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

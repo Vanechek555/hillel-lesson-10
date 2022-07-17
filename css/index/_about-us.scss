@@ -1,0 +1,72 @@
+
+/*---------------------About-us----------------------*/
+
+.about-us {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding-top: 100px;
+  background: rgb(245, 240, 240);
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 640px;
+    height: 450px;
+    top: 0;
+    right: 0;
+    background: url('../img/index/about-us/gears.png') 0 0 no-repeat;
+  }
+    &_margin {
+      margin-top: -50px;
+      margin-bottom: 110px;
+    }
+  
+  // .about-us__container
+  
+  &__container {
+  }
+
+  // .about-us__header
+
+  &__header {
+    &:not(:last-child) {
+      margin-bottom: 36px;
+    }
+  }
+
+  // .about-us__text-block
+
+  &__text-block {
+    &:not(:last-child) {
+      margin-bottom: 54px;
+    }
+  }
+
+  // .about-us__picture
+
+  &__picture {
+  }
+
+  // .about-us__image
+
+  &__image {
+  }
+}
+
+.block-text {
+  &>*:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+
+  // .block-text__item
+
+  &__item {
+    font-family: "Roboto Serif";
+    color: #4B4B4B;
+    letter-spacing: 0.15px;
+    line-height: 150%;
+  }
+}
+
+

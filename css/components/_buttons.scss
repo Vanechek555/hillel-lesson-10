@@ -1,0 +1,54 @@
+
+/*-----------------Button------------------*/
+
+.button {
+  padding: 5px 10px;
+  font-size: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: all 0.3s ease 0s;
+}
+
+/*----------------button-red-----------------*/
+
+.button-red {
+  padding: 8px 13px;
+  font-size: 12px;
+  background-color: #bd081d;
+  &:hover {
+    background-color: #8B0000;
+    color: rgb(213, 211, 211);
+  }
+}
+
+/*---------------button-outline--------------*/
+
+.button-outline {
+  font-size: 10px;
+  font-weight: 800;
+  color: rgb(34, 48, 66);
+  border: 1px solid #bd081d;
+  border-radius: 10px;
+  letter-spacing: 0.25px;
+  &:hover {
+    color: rgb(51, 72, 100, 0.5);
+    border: 1px solid #ff0926;
+  }
+}
+
+/*---------------button-input---------------*/
+
+.button-input {
+  min-height: 35px;
+  font-size: 10px;
+  font-weight: 600;
+  background-color: #bd081d;
+  letter-spacing: 1.25px;
+  border: 1px solid #E6E6E6;
+  border-radius: 0px 5px 5px 0px;
+  &:hover {
+    background-color: #8B0000;
+    color: rgb(213, 211, 211);
+  }
+}

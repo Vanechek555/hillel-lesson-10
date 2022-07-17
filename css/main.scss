@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Serif:regular,500,600,700,800,900&display=swap");
+@import "fonts/_index";
+@import "_null";
+@import "components/_buttons";
+@import "components/_header-block";
+
+
+/*----------------Body---------------*/
+
+body {
+  font-family: "Helvetica", sans-serif;
+  overflow-x: hidden;
+}
+
+/*---------------Wrapper-------------*/
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/*----------------Main---------------*/
+
+.main {
+  flex-grow: 1;
+}
+
+/*--------------Container------------*/
+
+[class*="__container"] {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.about-us__container {
+  max-width: 876px;
+  margin: 0 auto;
+  padding: 0 15px
+}
+

@@ -1,0 +1,73 @@
+
+/*----------------Subscribe---------------*/
+
+.subscribe {
+  font-family: "Roboto Serif";
+  position: relative;
+  padding: 0px 0px 20px 0px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 42px;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    background: rgb(43, 54, 70);
+  }
+
+    &_margin-bottom {
+      margin-bottom: 50px;
+    }
+
+  // .subscribe__container
+
+  &__container {
+  }
+
+  // .subscribe__body
+
+  &__body {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    padding: 30px 50px;
+    column-gap: 30px;
+    background-color: rgb(52, 65, 84);
+  }
+
+  // .subscribe__title
+
+  &__title {
+    font-size: 32px;
+    font-weight: 800;
+    color: rgb(188, 185, 185);
+    line-height: 133%;
+    letter-spacing: 0.25px;
+  }
+
+  // .subscribe__form
+
+  &__form {
+    flex: 0 1 50%;
+    display: flex;
+    align-items: center;
+  }
+  
+  // .subscribe__input
+  
+  &__input {
+    width: 100%;
+    flex: 1 1 auto;
+    min-height: 35px;
+    padding: 0 20px;
+    background: #F9F9F9;
+    letter-spacing: 0.2px;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px 0 0 5px;
+  }
+
+  // .subscribe__button
+
+  &__button {
+  }
+}
